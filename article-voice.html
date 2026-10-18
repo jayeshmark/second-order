@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"></head><body>
+<h2>The problem: one link makes every channel invisible</h2>
+<p>You promote an app through several channels at once.</p>
+<p>A creator posts about it. A DM funnel sends people to it. Some users find it on their own.</p>
+<p>Installs go up. Then someone asks: which channel actually worked?</p>
+<p>If every channel pointed to the same App Store page, you cannot answer that. You have one total, and a room full of claims.</p>
+<p>This strategy kills the guessing. You can set it up in an afternoon, plus review time.</p>
+<h2>The idea, in one line</h2>
+<p>You make a separate App Store product page for each source that sends people to your app, you give that source that page’s unique link and no other link, and then you read the installs page by page.</p>
+<h2>Before you start</h2>
+<p>You need your app live, or set up in App Store Connect, and an App Store Connect role that lets you edit the app’s pages.</p>
+<p>Three facts to plan around:</p>
+<p><strong>You get up to 70 custom pages per app.</strong> You will not need anywhere near that many. One page per real source is enough.</p>
+<p><strong>Only three things change from page to page.</strong> Screenshots (up to 10), app previews (up to 3), and promotional text (up to 170 characters). Your app name, icon, subtitle, and description stay the same on every page.</p>
+<p><strong>Every page goes through App Review before its link works in public.</strong> The review is separate from an app build, so no new code is needed, but it does take time. Most guides say 24 to 48 hours. Treat that as a rough guide, not a promise. Submit your pages before you hand links to creators, not on the day they post.</p>
+<p>Since 2025, a page can also be given its own search keywords, so when someone searches that keyword in the App Store, they can land on that page instead of your default one.</p>
+<h2>Step by step: build one page per source</h2>
+<p><strong>Step 1. List your sources first.</strong> Write down every place a link to your app will live: each creator’s bio link, your ManyChat or DM funnel link, your website, each ad campaign, and the default page for organic. One row per source. If a source cannot carry its own link, you cannot measure it separately.</p>
+<p><strong>Step 2. Open the right screen.</strong> In App Store Connect, go to My Apps, select your app, then Custom Product Pages in the left sidebar under Features, and click Create Custom Product Page.</p>
+<p><strong>Step 3. Name the page after its source.</strong> Give it a reference name that names the channel, like “CreatorName-IG-Bio” or “ManyChat-DM-Funnel”. The name is internal only, but it is how the page shows up in your analytics, so name it well. Vague name, vague report.</p>
+<p><strong>Step 4. Start from your default page, then tailor it.</strong> Copying your default page is the fastest start. Then adjust the screenshots and promotional text for that source’s audience. The test is simple: the page should feel like the next second of what that audience was just watching. A creator’s followers should land on a page that continues the creator’s video, not on your generic listing.</p>
+<p><strong>Step 5. Add the optional settings that fit.</strong> Assign search keywords if this page should catch a specific search (each keyword combination can belong to only one page). On iOS 18 and later, you can also set a deep link so a new install opens at the right content inside the app. Add any localizations you actually serve.</p>
+<p><strong>Step 6. Submit the page for review on its own.</strong> Click Add for Review and submit. You are not shipping a new app version for this. A custom page gets reviewed by itself.</p>
+<p><strong>Step 7. When it is approved, take the unique URL and give it to exactly one source.</strong> The approved page has its own URL: your normal App Store link plus a ppid parameter, like apps.apple.com/app/id…?ppid=… Give that URL to exactly one creator or funnel. Write it down next to their name in your source list from Step 1. Never reuse one page’s URL for a second source. The moment two sources share a URL, your attribution is gone.</p>
+<p><strong>Step 8. Repeat per source.</strong> One page, one link, one source, every time.</p>
+<p><strong>Step 9. Keep the default page for everything untracked.</strong> Organic, and anything you have not given its own page, stays on the default page. That keeps “everything else” as its own clean line instead of polluting a channel’s numbers.</p>
+<h2>How to read the numbers</h2>
+<p>In App Store Connect, open App Analytics. You get numbers per custom product page: impressions, product page views, downloads, and conversion rate.</p>
+<p>One caution first: very small pages may show nothing until they pass a few first time downloads. Do not judge a page on day one.</p>
+<p>Then compare pages on two numbers together, not one:</p>
+<p><strong>Product page views</strong> tell you how much traffic the source really sends. <strong>Conversion rate</strong> tells you how well that page turns traffic into installs. Installs are the two multiplied.</p>
+<p>Put those two together and you can actually tell what is wrong:</p>
+<p>A source with <strong>high views and low conversion</strong> is usually a page problem, not a creator problem. Fix the screenshots and promotional text so they match what the creator promised, before you blame the channel.</p>
+<p>A source with <strong>low views and high conversion</strong> is an opportunity. That audience installs. It just needs more traffic.</p>
+<h2>The reallocation rule</h2>
+<p>This is where the setup turns into the strategy.</p>
+<p>Once a week, or at the end of each campaign cycle, rank your sources by installs and conversion. Then push your promotion toward the top of that ranking: more posts, better placement, paid boosting behind the creators who are winning.</p>
+<p>And be honest about the bottom of the list: stop paying to promote sources whose pages get views but no installs after a fair window. Bring them back only with a rebuilt page, not with more money behind the same page.</p>
+<p>No ranking, no reallocation. Skip this step and you have built reporting, not a strategy.</p>
+<h2>Proof it works: the Payout example</h2>
+<p>Connor, founder and app builder behind Payout, a class action lawsuit discovery app, ran exactly this setup.</p>
+<p>Every distribution link pointed to its own custom product page: the ManyChat DM link, each influencer’s bio link, and organic traffic each landed on a different page.</p>
+<p>That is how he could say the split out loud instead of guessing it: installs from the ManyChat funnel and organic came in roughly even, in his reporting, and he could decide which partners got more promotion based on the per page numbers.</p>
+<p><em>Source: Connor, Payout, on “This 23 Yr Old Genius Makes $1M/Year with No-Code Apps. Here’s How,” SuperwallHQ. Result as claimed by the guest on the episode, not independently verified:</em></p>
+<p><em><a href="https://www.youtube.com/watch?v=zpTXi8WxeM0">https://www.youtube.com/watch?v=zpTXi8WxeM0</a></em></p>
+<h2>Common mistakes that quietly kill it</h2>
+<p><strong>One link everywhere, then arguing about which creator worked.</strong> Nobody can win that argument. It is unwinnable by design.</p>
+<p><strong>Sharing one custom URL across two creators to save time.</strong> You have not saved time. You have deleted the measurement.</p>
+<p><strong>Judging creators on installs alone</strong> when their landing page was never tailored to their content. Low conversion may be your page’s fault, not their audience.</p>
+<p><strong>Creating pages and never submitting them for review.</strong> An unapproved page’s link falls back to the default page, and that channel’s installs get counted as organic.</p>
+<p><strong>Checking analytics too early,</strong> before a page has enough downloads to report, and killing a channel on no data.</p>
+<h2>The limits</h2>
+<p>This is for mobile apps distributed through the App Store. No store page, no custom pages.</p>
+<p>Your numbers are only as clean as your link discipline. One URL, one source, never shared is not a detail. It is the whole system.</p>
+<p>And it answers one question well: which channel produced the install. It does not tell you why that person installed. That is a different question, for a different tool.</p>
+<h2>The second order effect: measurement rewrites the incentives</h2>
+<p>The obvious win is that you spend better. The deeper change is what a scoreboard does to people.</p>
+<p>When every channel has its own scoreboard, creators stop getting rewarded for claims. Audience size stops being proof. “My post did well” stops being an argument.</p>
+<p>Reward follows measured installs, and everyone knows it before they promote.</p>
+<p>So creators push a tracked link harder than an untracked one, because it reports back on them. Partners who deliver become visibly valuable and get more promotion. Partners who coasted on ambiguity lose their cover, because there is nothing left to hide behind.</p>
+<p>Ambiguity used to let every channel claim the same install. One page per source removes that, on purpose. That, more than the analytics screen, is what improves your channel mix over time.</p>
+</body></html>
